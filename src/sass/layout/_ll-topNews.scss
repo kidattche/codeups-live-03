@@ -2,4 +2,7 @@
 
 .l-topnews {
     margin-top: rem(40);
+    @includemq(md) {
+        margin-top: rem(70);
+    }
 }

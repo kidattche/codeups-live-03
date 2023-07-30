@@ -1,0 +1,10 @@
+@use 'global' as *;
+
+.l-company {
+    margin-top: rem(50);
+    @include mq(md) {
+        padding-top: rem(40);
+        
+
+    }
+}

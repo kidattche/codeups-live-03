@@ -18,6 +18,12 @@ background-size: cover;
     transform: translateY(-50%);
     left: rem(50);
     color: $white;
+    @include mq(md) {
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width:100%;
+    }
 }
 
 .p-mv__title {
@@ -25,13 +31,21 @@ background-size: cover;
     font-weight: $bold;
     font-family: $english-family;
     line-height: 1.2916667;
+    @include mq(md) {
+        font-size: rem(72);
+        width: 100vw;
 }
+}
+
 
 .p-mv__subtitle {
     font-size: rem(16);
     letter-spacing: 0.108em;
     line-height: 1.8125;
     margin-top: rem(20);
+    @include mq(md) {
+        font-size: rem(24);
+    }
 }
 .p-mv__btn {
     margin-top: rem(50);

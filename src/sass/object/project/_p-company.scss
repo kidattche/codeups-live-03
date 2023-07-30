@@ -1,0 +1,54 @@
+@use "global" as *;
+
+.p-company {
+  padding-bottom: rem(96);
+  background-image: url(../images/common/company-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-position: rem(15) 0;
+  @include mq(md) {
+    padding-top: rem(136);
+  }
+}
+.p-company__inner.l-inner {
+  @include mq(md) {
+  max-width: rem(1300);
+  background: url(../images/common/company-bg-pc.png) no-repeat center center/contain;
+  }
+}
+
+.p-company__contents {
+  margin-top: rem(30);
+  text-align: center;
+}
+
+.p-company__content {
+  margin-top: rem(43);
+  font-size: rem(14);
+}
+
+.p-company__subtitle {
+  text-align: center;
+  font-size: rem(32);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  line-height: 1.5;
+  display: inline-block;
+}
+
+.p-company__yellow {
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    transparent 75%,
+    #f5f534 75%,
+    #f5f534 90%,
+    transparent 90%,
+    transparent 100%
+  );
+}
+
+.p-company__btn {
+  margin-top: rem(30);
+}

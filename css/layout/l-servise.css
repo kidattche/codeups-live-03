@@ -1,0 +1,29 @@
+body {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.u-desktop {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .u-desktop {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .u-mobile {
+    display: none;
+  }
+}
+
+.l-service {
+  margin-top: 80px;
+  margin-top: 5rem;
+}
+@media screen and (min-width: 768px) {
+  .l-service {
+    margin-top: 8.75rem;
+  }
+}
+/*# sourceMappingURL=l-servise.css.map */
