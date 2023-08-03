@@ -49,6 +49,7 @@
     padding: rem(4) rem(18);
     background-color:#E8E8E8;
     margin-left: rem(15);
+    flex-shrink:0;
 
 }
 
@@ -60,6 +61,8 @@
 
 .p-news-content__link {
     @include mq(md) {
-        margin-left: rem(20);
+        margin-left: rem(35);
+        min-width: rem(700);
+        width: 100%;
     }
 }

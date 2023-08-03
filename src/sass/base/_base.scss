@@ -1,5 +1,9 @@
 /* リキッドレイアウト対応 */
 @use "global" as *;
+/*wp-paginavi*/
+@use "layout/_l-pagenavi.scss" as pagenavi;
+
+
 
 html {
   //~375px
@@ -38,3 +42,4 @@ a {
     }
   }
 }
+

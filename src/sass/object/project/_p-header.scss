@@ -1,7 +1,7 @@
 @use 'global' as *;
 
 .p-header {
-  height: rem(62);
+  height: rem(64);
   background-color: transparent;
   // background-color: #21054D;
   z-index: 1000;
@@ -14,6 +14,7 @@
   height: inherit;
   align-items: center;
   padding: 0 15px;
+  background-color: #21054D;
   @include mq(md){
   padding: 0 rem(30);
   }

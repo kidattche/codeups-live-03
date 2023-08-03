@@ -2,7 +2,7 @@
 
 .p-company {
   padding-bottom: rem(96);
-  background-image: url(../images/common/company-bg.png);
+  background-image: url(../images/common/page-company-bg-pc.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -11,12 +11,24 @@
     padding-top: rem(136);
   }
 }
-.p-company__inner.l-inner {
+
+.p-company--subpage {
+  padding-top: rem(32);
+  padding-bottom: 0;
+  background-image: url(../images/common/page-company-bg-sp.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-position: rem(-13) rem(-46) ;
   @include mq(md) {
-  max-width: rem(1300);
-  background: url(../images/common/company-bg-pc.png) no-repeat center center/contain;
+  padding-top: rem(136);
+  background: url(../images/common/company-bg-pc.png);
+  background-repeat:no-repeat;
+  background-position:  top center;
+  background-size: rem(1300);
   }
 }
+
 
 .p-company__contents {
   margin-top: rem(30);
@@ -52,3 +64,68 @@
 .p-company__btn {
   margin-top: rem(30);
 }
+.p-company__message {
+  margin-top: rem(60);
+  @include mq(md) {
+    display: flex;
+    gap:rem(30)
+
+  }
+}
+
+.p-company__message-image {
+  aspect-ratio: 335/248;
+  @include mq(md) {
+    margin-top: rem(60);
+
+}
+}
+
+.p-company__message-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.p-company__message-text {
+  margin-top: rem(30);
+  font-size: rem(14);
+  line-height: calc(24 /14);
+  @include mq(md) {
+    margin-top: rem(60);
+    max-width: rem(605);
+    width: 100%;
+    font-size: rem(15);
+}
+}
+
+.p-company__message-text p:not(:first-child){
+  margin-top: calc(rem(14 )* (24/14));
+}
+
+.c-section-header__subpage {
+  font-size: rem(24);
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.p-company-info__map {
+  aspect-ratio: 335 / 240;
+  margin-top: rem(40);
+  @include mq(md) {
+    margin-top: rem(60);
+    aspect-ratio: 1110 / 394;
+
+}
+}
+
+.p-company-info__map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.c-section-header__detail {
+  font-size: rem(32);
+}
+
+
