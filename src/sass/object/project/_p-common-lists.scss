@@ -1,5 +1,9 @@
 @use 'global' as *;
 
+.p-page-contact__text {
+    text-align: center;
+}
+
 .p-common-lists {
     margin-top: rem(60);
 }

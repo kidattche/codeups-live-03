@@ -1,5 +1,9 @@
 @use 'global' as *;
 
+.p-header.is-color {
+  background-color: #21054D;
+} 
+
 .p-header {
   height: rem(64);
   background-color: transparent;
@@ -8,13 +12,15 @@
   position: fixed;
   width: 100%;
 }
+
+
 .p-header__inner {
   display: flex;
   justify-content: space-between;
   height: inherit;
   align-items: center;
   padding: 0 15px;
-  background-color: #21054D;
+  
   @include mq(md){
   padding: 0 rem(30);
   }
