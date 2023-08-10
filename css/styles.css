@@ -31,7 +31,7 @@ html {
 }
 @media (max-width: 375px) {
   html {
-    font-size: 4.2666666667vw;
+    font-size: 4.2666666667vw;z
   }
 }
 @media screen and (min-width: 768px) {
@@ -333,7 +333,6 @@ select::-ms-expand {
   width: 200px;
   width: 12.5rem;
   text-transform: uppercase;
-  background: transparent -webkit-gradient(linear, left top, right top, from(#7633A4), to(#250D65)) 0% 0% no-repeat padding-box;
   background: transparent linear-gradient(90deg, #7633A4 0%, #250D65 100%) 0% 0% no-repeat padding-box;
   border-radius: 50px;
   opacity: 1;
@@ -641,7 +640,6 @@ button,
   margin-top: 0.625rem;
   padding: 20px 72px;
   padding: 1.25rem 4.5rem;
-  background: transparent -webkit-gradient(linear, left top, right top, from(#7633a4), to(#250d65)) 0% 0% no-repeat padding-box;
   background: transparent linear-gradient(90deg, #7633a4 0%, #250d65 100%) 0% 0% no-repeat padding-box;
   color: white;
   font-size: 14px;
@@ -1094,7 +1092,6 @@ textarea {
 }
 
 .p-company__yellow {
-  background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(75%, transparent), color-stop(75%, #f5f534), color-stop(90%, #f5f534), color-stop(90%, transparent), to(transparent));
   background: linear-gradient(180deg, transparent 0%, transparent 75%, #f5f534 75%, #f5f534 90%, transparent 90%, transparent 100%);
 }
 
@@ -2115,8 +2112,7 @@ h3 {
 }
 @media screen and (min-width: 768px) {
   .p-works__content {
-    background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(33%, transparent), color-stop(33%, #f0f0f0), to(#f0f0f0));
-    background: linear-gradient(90deg, transparent 0%, transparent 33%, #f0f0f0 33%, #f0f0f0 100%);
+d    background: linear-gradient(90deg, transparent 0%, transparent 33%, #f0f0f0 33%, #f0f0f0 100%);
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
