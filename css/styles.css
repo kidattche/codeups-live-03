@@ -31,7 +31,7 @@ html {
 }
 @media (max-width: 375px) {
   html {
-    font-size: 4.2666666667vw;z
+    font-size: 4.2666666667vw;
   }
 }
 @media screen and (min-width: 768px) {
@@ -333,6 +333,7 @@ select::-ms-expand {
   width: 200px;
   width: 12.5rem;
   text-transform: uppercase;
+  background: transparent -webkit-gradient(linear, left top, right top, from(#7633A4), to(#250D65)) 0% 0% no-repeat padding-box;
   background: transparent linear-gradient(90deg, #7633A4 0%, #250D65 100%) 0% 0% no-repeat padding-box;
   border-radius: 50px;
   opacity: 1;
@@ -640,6 +641,7 @@ button,
   margin-top: 0.625rem;
   padding: 20px 72px;
   padding: 1.25rem 4.5rem;
+  background: transparent -webkit-gradient(linear, left top, right top, from(#7633a4), to(#250d65)) 0% 0% no-repeat padding-box;
   background: transparent linear-gradient(90deg, #7633a4 0%, #250d65 100%) 0% 0% no-repeat padding-box;
   color: white;
   font-size: 14px;
@@ -1034,7 +1036,7 @@ textarea {
 .p-company {
   padding-bottom: 96px;
   padding-bottom: 6rem;
-  background-image: url(../images/common/page-company-bg-pc.png);
+  background-image: url("<?php echo get_template_directory_uri(); ?>/images/common/page-company-bg-pc.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1047,11 +1049,11 @@ textarea {
   }
 }
 
-.p-company--subpage {
+.p-company__inner {
   padding-top: 32px;
   padding-top: 2rem;
   padding-bottom: 0;
-  background-image: url(../images/common/page-company-bg-sp.png);
+  background-image: url("<?php echo get_template_directory_uri(); ?>/images/common/company-bg-sp.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -1059,9 +1061,9 @@ textarea {
   background-position: -0.8125rem -2.875rem;
 }
 @media screen and (min-width: 768px) {
-  .p-company--subpage {
+  .p-company__inner {
     padding-top: 8.5rem;
-    background: url(../images/common/company-bg-pc.png);
+    background-image: url("<?php echo get_template_directory_uri(); ?>/images/common/company-bg-pc.png");
     background-repeat: no-repeat;
     background-position: top center;
     background-size: 81.25rem;
@@ -1092,6 +1094,7 @@ textarea {
 }
 
 .p-company__yellow {
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(75%, transparent), color-stop(75%, #f5f534), color-stop(90%, #f5f534), color-stop(90%, transparent), to(transparent));
   background: linear-gradient(180deg, transparent 0%, transparent 75%, #f5f534 75%, #f5f534 90%, transparent 90%, transparent 100%);
 }
 
@@ -2112,7 +2115,8 @@ h3 {
 }
 @media screen and (min-width: 768px) {
   .p-works__content {
-d    background: linear-gradient(90deg, transparent 0%, transparent 33%, #f0f0f0 33%, #f0f0f0 100%);
+    background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(33%, transparent), color-stop(33%, #f0f0f0), to(#f0f0f0));
+    background: linear-gradient(90deg, transparent 0%, transparent 33%, #f0f0f0 33%, #f0f0f0 100%);
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;

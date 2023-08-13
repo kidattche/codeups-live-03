@@ -13,7 +13,7 @@
 $news = esc_url( home_url( '/news/' ) );
 $service = esc_url( home_url( '/service/' ) );
 $works = esc_url( home_url( '/works/' ) );
-$company = esc_url( home_url( '/company/' ) );
+$company = esc_url( home_url( '/overview/' ) );
 $recruit = esc_url( home_url( '/recruit/' ) );
 $contact = esc_url( home_url( '/contact/' ) );
 ?>
@@ -21,7 +21,7 @@ $contact = esc_url( home_url( '/contact/' ) );
   <?php wp_body_open(); ?>
   <header class="l-header p-header">
     <div class="p-header__inner">
-      <h1 class="p-header__logo">
+      <h1 class="p-header__logo">Code Ups
     </h1>
       <div class="p-header__drawer c-hamburger js-hamburger">
         <span></span>

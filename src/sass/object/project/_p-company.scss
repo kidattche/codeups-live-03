@@ -2,7 +2,7 @@
 
 .p-company {
   padding-bottom: rem(96);
-  background-image: url(../images/common/page-company-bg-pc.png);
+  background-image: url('<?php echo get_template_directory_uri(); ?>/images/common/page-company-bg-pc.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -12,17 +12,17 @@
   }
 }
 
-.p-company--subpage {
+.p-company__inner {
   padding-top: rem(32);
   padding-bottom: 0;
-  background-image: url(../images/common/page-company-bg-sp.png);
+  background-image: url('<?php echo get_template_directory_uri(); ?>/images/common/company-bg-sp.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   background-position: rem(-13) rem(-46) ;
   @include mq(md) {
   padding-top: rem(136);
-  background: url(../images/common/company-bg-pc.png);
+  background-image: url('<?php echo get_template_directory_uri(); ?>/images/common/company-bg-pc.png');
   background-repeat:no-repeat;
   background-position:  top center;
   background-size: rem(1300);
